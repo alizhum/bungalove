@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/libs/normalize.css">
+    <link rel="stylesheet" href="css/libs/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/libs/fancybox.css">
+    <link rel="stylesheet" href="css/libs/animate.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <header id="header" class="header">
+    <div class="container">
+        <div class="header__inner">
+            <a href="#" class="logo header__logo">
+                <img src="img/logo.png" alt="" class="logo__img header__logo-img">
+            </a>
+            <div id="header-mobile" class="header__mobile">
+                <nav class="nav header__nav">
+                    <ul class="nav__list header__nav-list">
+                        <li class="nav__item header__nav-item">
+                            <a href="#" class="nav__link header__nav-link">
+                                О BungaLove
+                            </a>
+                        </li>
+                        <li class="nav__item header__nav-item">
+                            <a href="#" class="nav__link header__nav-link">
+                                Номера
+                            </a>
+                        </li>
+                        <li class="nav__item header__nav-item">
+                            <a href="#" class="nav__link header__nav-link">
+                                Инфраструктура
+                            </a>
+                        </li>
+                        <li class="nav__item header__nav-item">
+                            <a href="#" class="nav__link header__nav-link">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="languages header__languages">
+                    <button class="btn languages__toggle">
+                        <span class="languages__toggle-icon" style="background-image: url(img/icons/ru.svg);"></span>
+                        <span class="languages__toggle-lang">RU</span>              
+                        <svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.36963 10L0.994629 3.625C0.525879 3.15625 0.525879 2.45312 0.994629 2.03125L2.02588 0.953124C2.49463 0.531249 3.19775 0.531249 3.61963 0.953124L8.11963 5.5L12.6665 0.953125C13.0884 0.53125 13.7915 0.53125 14.2603 0.953125L15.3384 2.03125C15.7603 2.45313 15.7603 3.15625 15.3384 3.625L8.96338 10C8.49463 10.4219 7.7915 10.4219 7.36963 10Z" fill="white"/>
+                        </svg>    
+                    </button>
+                    <ul class="languages__list">
+                        <li class="languages__list-item">
+                            <a href="#" class="languages__list-link">
+                                EN
+                            </a>
+                        </li>
+                        <li class="languages__list-item">
+                            <a href="#" class="languages__list-link">
+                                TR
+                            </a>
+                        </li>
+                        <li class="languages__list-item">
+                            <a href="#" class="languages__list-link">
+                                FA
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="social header__social">
+                    <li class="social__item header__social-item">
+                        <a href="#" class="social__link social__link--youtube header__social-link">
+                            <svg width="38" height="28" viewBox="0 0 38 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M35.3249 2.51375C36.433 3.67925 36.7964 6.32525 36.7964 6.32525C36.7964 6.32525 37.1665 9.43025 37.1665 12.5352V15.449C37.1665 18.5562 36.7964 21.6635 36.7964 21.6635C36.7964 21.6635 36.433 24.3072 35.3249 25.4727C34.0573 26.8498 32.6523 26.9938 31.8567 27.0725L31.6174 27.0995C26.4406 27.4887 18.6665 27.5 18.6665 27.5C18.6665 27.5 9.04642 27.41 6.08571 27.113C5.91881 27.0836 5.75104 27.0596 5.58265 27.041C4.64524 26.924 3.17375 26.7418 2.00587 25.4727C0.897817 24.3072 0.536593 21.6635 0.536593 21.6635C0.536593 21.6635 0.166504 18.5585 0.166504 15.449V12.5375C0.166504 9.4325 0.536593 6.32525 0.536593 6.32525C0.536593 6.32525 0.897817 3.67925 2.00587 2.51375C3.27569 1.1345 4.68292 0.995 5.4785 0.914L5.7134 0.88925C10.8924 0.5 18.6576 0.5 18.6576 0.5H18.6732C18.6732 0.5 26.4406 0.5 31.6174 0.88925C31.6963 0.898346 31.7754 0.906597 31.8545 0.914C32.6479 0.99275 34.0551 1.1345 35.3249 2.51375ZM14.8482 8.195V18.9815L24.8428 13.6062L14.8482 8.195Z" fill="white" />
+                            </svg>
+                        </a>
+                    </li> 
+                    <li class="social__item header__social-item">
+                        <a href="#" class="social__link social__link--youtube header__social-link">
+                            <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M29.4846 4.1278L2.19578 14.314C1.39663 14.6123 1.31386 15.7099 2.05924 16.1246L8.25346 19.5714L9.97833 27.2499C10.1258 27.9065 10.8667 28.2329 11.4508 27.8986L17.0143 24.7143L24.5346 29.6807C25.1271 30.072 25.9273 29.7384 26.0663 29.0421L30.815 5.26047C30.9684 4.49211 30.2187 3.85379 29.4846 4.1278Z" fill="white" />
+                                <path d="M23.6665 10.4286L11.2893 18.0907C11.216 18.136 11.18 18.2233 11.2 18.3071L12.3079 22.9497C12.3517 23.1331 12.6017 23.1596 12.6829 22.9894L13.6969 20.8648C13.7069 20.844 13.7203 20.825 13.7368 20.8088L23.9124 10.7408C24.0817 10.5733 23.869 10.3032 23.6665 10.4286Z" fill="#040404" />
+                            </svg>
+                        </a>
+                    </li> 
+                    <li class="social__item header__social-item">
+                        <a href="#" class="social__link social__link--youtube header__social-link">
+                            <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M28.166 0.5H4.16704C1.90756 0.5 0.166504 2.24105 0.166504 4.50054V28.4995C0.166504 30.7568 1.90756 32.5 4.16704 32.5H28.166C30.4233 32.5 32.1665 30.7589 32.1665 28.4995V4.50054C32.1665 2.24105 30.4233 0.5 28.166 0.5ZM16.1903 10.2141C19.7393 10.2141 22.6145 13.0006 22.6145 16.4395C22.6145 19.8763 19.7393 22.665 16.1903 22.665C12.6434 22.665 9.76823 19.8763 9.76823 16.4395C9.76823 13.0006 12.6455 10.2141 16.1903 10.2141ZM28.166 27.4993C28.166 28.2014 27.8657 28.4995 27.1658 28.4995H5.16718C4.4673 28.4995 4.16704 28.2014 4.16704 27.4993V13.4996L6.65982 14.0418C6.39197 14.9123 6.24724 15.8325 6.24724 16.7873C6.24724 22.1055 10.7014 26.4214 16.1903 26.4214C21.6813 26.4214 26.1333 22.1077 26.1333 16.7873C26.1333 15.8325 25.9886 14.9123 25.7207 14.0418L28.166 13.4996V27.4993ZM28.166 9.50122C28.166 10.0542 27.7188 10.5013 27.1658 10.5013H23.1653C22.6123 10.5013 22.1652 10.0542 22.1652 9.50122V5.50067C22.1652 4.94768 22.6123 4.50054 23.1653 4.50054H27.1658C27.7188 4.50054 28.166 4.94768 28.166 5.50067V9.50122Z" fill="white" />
+                            </svg>
+                        </a>
+                    </li> 
+                    <li class="social__item header__social-item">
+                        <a href="#" class="social__link social__link--youtube header__social-link">
+                            <svg width="31" height="33" viewBox="0 0 31 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.964 17.3371C13.1987 16.63 12.3497 15.6374 11.9807 14.7576C11.9244 14.6449 11.8117 14.3613 11.9807 14.134C12.3207 13.6814 12.377 13.6523 12.746 13.2269C13.0005 12.9142 13.1987 12.6325 13.1151 12.3762L11.8407 9.06036C11.7262 8.83312 11.3881 8.80586 10.99 8.77677C10.6501 8.77677 10.2828 8.77677 10.0265 8.83312C9.45936 9.03127 8.29957 10.5619 8.15778 11.6672C7.84511 14.0759 10.0265 17.279 12.208 19.2623C14.3894 21.2746 17.7597 23.1743 20.1392 22.6344C21.2445 22.3799 22.6606 21.1038 22.7733 20.5093C22.8297 20.2548 22.8024 19.8858 22.7442 19.5458C22.7151 19.1495 22.6315 18.866 22.4043 18.7533L19.5157 17.4208C19.2594 17.279 19.0049 17.3917 18.7504 17.7043C18.4395 18.1297 18.2959 18.2988 17.9287 18.7533C17.7306 19.0078 17.5888 19.1786 17.3634 19.2059C17.1071 19.2623 16.7689 19.1205 16.7108 19.1205C15.8037 18.8114 14.7566 18.0461 13.964 17.3371ZM4.44573 27.5136L6.08906 23.347C4.27485 21.2492 3.16959 18.4987 3.16959 15.4956C3.16959 8.86403 8.55225 3.50676 15.182 3.50676C21.8098 3.50676 27.1634 8.86403 27.1634 15.4956C27.1634 22.1272 21.8098 27.5136 15.182 27.5136C12.5188 27.5136 10.0829 26.6628 8.09961 25.1903L4.44573 27.5136ZM2.43336 23.4306L0.166504 32.5L8.26867 28.8152C10.3374 29.8914 12.6879 30.5167 15.182 30.5167C23.4532 30.5167 30.1665 23.7997 30.1665 15.4938C30.1665 7.21885 23.4514 0.5 15.182 0.5C6.88165 0.5 0.168322 7.21704 0.168322 15.4938C0.168322 18.4151 1.01726 21.1365 2.43336 23.4306Z" fill="white" />
+                            </svg>
+                        </a>
+                    </li> 
+                </ul>
+            </div>
+            <button id="nav-toggle" class="btn nav-toggle">
+                <span class="nav-toggle__item"></span>
+                <span class="nav-toggle__item"></span>
+                <span class="nav-toggle__item"></span>
+            </button>
+        </div>
+    </div>
+</header>
+    <main class="content" id="content">
+        <section class="section intro">
+            <div class="container">
+                <div class="intro__inner">
+                    <div class="intro__border animate__animated animate__fadeIn"></div>
+                    <div class="intro__subtitle animate__animated animate__fadeInRight">
+                        От&nbsp;Nun Hotels
+                    </div>
+                    <h1 class="intro__title animate__animated animate__fadeInLeft">
+                        Только Природа
+                        и&nbsp;Бунгало
+                    </h1>
+                </div>
+                <div class="intro__location animate__animated animate__fadeInRight">
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_0_76)">
+                          <path d="M25.5975 36.955C26.815 38.1475 28.4175 38.74 30.015 38.74C31.595 38.74 33.17 38.1575 34.355 36.9975L42.3725 29.875C45.6775 26.57 47.5 22.175 47.5 17.5C47.5 12.825 45.6775 8.4325 42.3725 5.125C39.07 1.82 34.675 0 30 0C25.325 0 20.93 1.82 17.625 5.125C10.8025 11.9475 10.8025 23.05 17.6775 29.925L25.5975 36.955ZM19.3925 6.8925C22.2275 4.06 25.995 2.5 30 2.5C34.005 2.5 37.7725 4.06 40.605 6.8925C43.44 9.725 45 13.4925 45 17.5C45 21.5075 43.44 25.2725 40.66 28.055L32.6525 35.1675C31.1925 36.6 28.8125 36.5925 27.3025 35.125L19.3925 28.105C13.545 22.2575 13.545 12.74 19.3925 6.8925ZM30 24.95C34.12 24.95 37.475 21.5975 37.475 17.475C37.475 13.3525 34.12 10 30 10C25.88 10 22.525 13.3525 22.525 17.475C22.525 21.5975 25.88 24.95 30 24.95ZM30 12.5C32.745 12.5 34.975 14.7325 34.975 17.475C34.975 20.2175 32.7425 22.45 30 22.45C27.2575 22.45 25.025 20.2175 25.025 17.475C25.025 14.7325 27.2575 12.5 30 12.5ZM60 42.54C60 42.98 59.77 43.3875 59.3925 43.6125L33.6175 59.0775C32.5025 59.7475 31.2525 60.0825 30 60.0825C28.7475 60.0825 27.4975 59.745 26.3825 59.0775L0.6075 43.61C0.23 43.385 0 42.9775 0 42.5375C0 42.0975 0.23 41.69 0.6075 41.465L13.1075 33.965C13.6925 33.6075 14.4675 33.8025 14.8225 34.395C15.18 34.985 14.985 35.755 14.3925 36.11L3.68 42.5375L27.6675 56.93C29.1075 57.795 30.895 57.795 32.335 56.93L56.3225 42.5375L45.545 36.07C44.9525 35.715 44.76 34.9475 45.115 34.355C45.4725 33.7625 46.245 33.57 46.83 33.925L59.3925 41.465C59.77 41.6925 60 42.0975 60 42.5375V42.54Z" fill="white" />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_0_76">
+                            <rect width="60" height="60" fill="white" />
+                          </clipPath>
+                        </defs>
+                    </svg>
+                    Çıralı, Antalya, Türkiye
+                </div>
+            </div>
+        </section>
+        <section class="section section-gap about">
+            <div class="container">
+                <div class="about__inner">
+                    <div class="about__info">
+                        <div class="section__header">
+                            <div class="section__top-text wow animate__animated animate__fadeInUp" data-wow-delay=".3s">
+                                СОЗДАЕМ ВОСПОМИНАНИЯ ВМЕСТЕ  
+                            </div>
+                            <h2 class="section__title wow animate__animated animate__fadeInUp" data-wow-delay=".5s">
+                                NUN BungaLove
+                            </h2>
+                        </div>
+                        <div class="about__description wow animate__animated animate__fadeInUp" data-wow-delay=".7s">
+                            <p>
+                                Ваш идеальный уголок для отдыха в живописном Чиралы, Турция. Здесь, среди роскошной природы, вас ожидает незабываемый отпуск, полный уюта и комфорта.
+                            </p>
+                            <p>
+                                BungaLove by Nun Hotels — это истинное воплощение гармонии с природой. Утопающие в зелени сады предлагают уединение и покой, позволяя наслаждаться видами гор и моря. Каждый домик оформлен с особым вниманием к деталям, создавая атмосферу тепла и домашнего уюта.
+                            </p>
+                        </div>
+                        <button href="#" class="nun-btn nun-btn--outline about__link open-modal" data-id="touch">
+                            <span>СВЯЗАТЬСЯ С НАМИ</span>
+                        </button>
+                    </div>
+                    <div class="about__right">
+                        <div class="about__thumbs">
+                            <img src="img/about-1.jpg" alt="" class="about__thumb wow animate__animated animate__fadeInLeft" loading="lazy" data-wow-delay=".5s">
+                            <img src="img/about-2.jpg" alt="" class="about__thumb wow animate__animated animate__fadeInRight" loading="lazy" data-wow-delay=".5s">
+                        </div>
+                        <div class="about__number wow animate__animated animate__fadeInUp">
+                            <div class="about__number-value">
+                                3500
+                            </div>
+                            <div class="about__number-measure">
+                                кв.м.
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <section class="section section-gap section--dark apartments">
+            <div class="container">
+                <div class="section__header section__header--white section__header--center">
+                    <div class="section__top-text wow animate__animated animate__fadeInUp" data-wow-delay=".3s">
+                        НАША ТЕРРИТОРИЯ
+                    </div>
+                    <h2 class="section__title apartments__title animate__animated animate__fadeInUp" data-wow-delay=".5s">
+                        Только самое лучшее в Вашем отдыхе
+                    </h2>
+                </div>
+                <div class="apartments__inner tab">
+                    <div class="tab__buttons apartments__tab-buttons">
+                        <button class="btn tab__button tab__button--active apartments__tab-button" data-content="tab1">
+                            Все
+                        </button>
+                        <button class="btn tab__button apartments__tab-button" data-content="tab2">
+                            Бунгало
+                        </button>
+                        <button class="btn tab__button apartments__tab-button" data-content="tab3">
+                            Номера
+                        </button>
+                        <button class="btn tab__button apartments__tab-button" data-content="tab4">
+                            Ресторан
+                        </button>
+                        <button class="btn tab__button apartments__tab-button" data-content="tab5">
+                            Бассейн
+                        </button>
+                        <button class="btn tab__button apartments__tab-button" data-content="tab6">
+                            Инфраструктура
+                        </button>
+                    </div>
+                    <div class="apartments__contents">
+                        <div id="tab1" class="apartments__content tab__content tab__content--active">
+                            <div class="swiper apartments__slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide apartments__slide">
+                                        <a href="img/apartment-1.jpg" data-fancybox="apartments">
+                                            <img src="img/apartment-1.jpg" alt="" class="apartments__img" loading="lazy">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide apartments__slide">
+                                        <a href="img/apartment-2.jpg" data-fancybox="apartments">
+                                            <img src="img/apartment-2.jpg" alt="" class="apartments__img" loading="lazy">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide apartments__slide">
+                                        <a href="img/apartment-3.jpg" data-fancybox="apartments">
+                                            <img src="img/apartment-3.jpg" alt="" class="apartments__img" loading="lazy">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide apartments__slide">
+                                        <a href="img/apartment-4.jpg" data-fancybox="apartments">
+                                            <img src="img/apartment-4.jpg" alt="" class="apartments__img" loading="lazy">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide apartments__slide">
+                                        <a href="img/apartment-3.jpg" data-fancybox="apartments">
+                                            <img src="img/apartment-3.jpg" alt="" class="apartments__img" loading="lazy">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide apartments__slide">
+                                        <a href="img/apartment-1.jpg" data-fancybox="apartments">
+                                            <img src="img/apartment-1.jpg" alt="" class="apartments__img" loading="lazy">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab2" class="apartments__content tab__content">
+                            <div class="swiper apartments__slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide apartments__slide">
+                                        <a href="img/apartment-4.jpg" data-fancybox="apartments">
+                                            <img src="img/apartment-4.jpg" alt="" class="apartments__img" loading="lazy">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide apartments__slide">
+                                        <a href="img/apartment-1.jpg" data-fancybox="apartments">
+                                            <img src="img/apartment-1.jpg" alt="" class="apartments__img" loading="lazy">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide apartments__slide">
+                                        <a href="img/apartment-4.jpg" data-fancybox="apartments">
+                                            <img src="img/apartment-4.jpg" alt="" class="apartments__img" loading="lazy">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide apartments__slide">
+                                        <a href="img/apartment-2.jpg" data-fancybox="apartments">
+                                            <img src="img/apartment-2.jpg" alt="" class="apartments__img" loading="lazy">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide apartments__slide">
+                                        <a href="img/apartment-3.jpg" data-fancybox="apartments">
+                                            <img src="img/apartment-3.jpg" alt="" class="apartments__img" loading="lazy">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide apartments__slide">
+                                        <a href="img/apartment-1.jpg" data-fancybox="apartments">
+                                            <img src="img/apartment-1.jpg" alt="" class="apartments__img" loading="lazy">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab3" class="apartments__content tab__content">
+                            <div class="swiper apartments__slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide apartments__slide">
+                                        <a href="img/apartment-3.jpg" data-fancybox="apartments">
+                                            <img src="img/apartment-3.jpg" alt="" class="apartments__img" loading="lazy">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide apartments__slide">
+                                        <a href="img/apartment-2.jpg" data-fancybox="apartments">
+                                            <img src="img/apartment-2.jpg" alt="" class="apartments__img" loading="lazy">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide apartments__slide">
+                                        <a href="img/apartment-3.jpg" data-fancybox="apartments">
+                                            <img src="img/apartment-3.jpg" alt="" class="apartments__img" loading="lazy">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide apartments__slide">
+                                        <a href="img/apartment-1.jpg" data-fancybox="apartments">
+                                            <img src="img/apartment-1.jpg" alt="" class="apartments__img" loading="lazy">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide apartments__slide">
+                                        <a href="img/apartment-3.jpg" data-fancybox="apartments">
+                                            <img src="img/apartment-3.jpg" alt="" class="apartments__img" loading="lazy">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide apartments__slide">
+                                        <a href="img/apartment-1.jpg" data-fancybox="apartments">
+                                            <img src="img/apartment-1.jpg" alt="" class="apartments__img" loading="lazy">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab4" class="apartments__content tab__content">
+                            <div class="swiper apartments__slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide apartments__slide">
+                                        <a href="img/apartment-1.jpg" data-fancybox="apartments">
+                                            <img src="img/apartment-1.jpg" alt="" class="apartments__img" loading="lazy">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide apartments__slide">
+                                        <a href="img/apartment-3.jpg" data-fancybox="apartments">
+                                            <img src="img/apartment-3.jpg" alt="" class="apartments__img" loading="lazy">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide apartments__slide">
+                                        <a href="img/apartment-4.jpg" data-fancybox="apartments">
+                                            <img src="img/apartment-4.jpg" alt="" class="apartments__img" loading="lazy">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide apartments__slide">
+                                        <a href="img/apartment-1.jpg" data-fancybox="apartments">
+                                            <img src="img/apartment-1.jpg" alt="" class="apartments__img" loading="lazy">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide apartments__slide">
+                                        <a href="img/apartment-3.jpg" data-fancybox="apartments">
+                                            <img src="img/apartment-3.jpg" alt="" class="apartments__img" loading="lazy">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide apartments__slide">
+                                        <a href="img/apartment-1.jpg" data-fancybox="apartments">
+                                            <img src="img/apartment-1.jpg" alt="" class="apartments__img" loading="lazy">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab5" class="apartments__content tab__content">
+                            <div class="swiper apartments__slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide apartments__slide">
+                                        <a href="img/apartment-4.jpg" data-fancybox="apartments">
+                                            <img src="img/apartment-4.jpg" alt="" class="apartments__img" loading="lazy">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide apartments__slide">
+                                        <a href="img/apartment-1.jpg" data-fancybox="apartments">
+                                            <img src="img/apartment-1.jpg" alt="" class="apartments__img" loading="lazy">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide apartments__slide">
+                                        <a href="img/apartment-3.jpg" data-fancybox="apartments">
+                                            <img src="img/apartment-3.jpg" alt="" class="apartments__img" loading="lazy">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide apartments__slide">
+                                        <a href="img/apartment-1.jpg" data-fancybox="apartments">
+                                            <img src="img/apartment-1.jpg" alt="" class="apartments__img" loading="lazy">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide apartments__slide">
+                                        <a href="img/apartment-3.jpg" data-fancybox="apartments">
+                                            <img src="img/apartment-3.jpg" alt="" class="apartments__img" loading="lazy">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide apartments__slide">
+                                        <a href="img/apartment-1.jpg" data-fancybox="apartments">
+                                            <img src="img/apartment-1.jpg" alt="" class="apartments__img" loading="lazy">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab6" class="apartments__content tab__content">
+                            <div class="swiper apartments__slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide apartments__slide">
+                                        <a href="img/apartment-2.jpg" data-fancybox="apartments">
+                                            <img src="img/apartment-2.jpg" alt="" class="apartments__img" loading="lazy">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide apartments__slide">
+                                        <a href="img/apartment-3.jpg" data-fancybox="apartments">
+                                            <img src="img/apartment-3.jpg" alt="" class="apartments__img" loading="lazy">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide apartments__slide">
+                                        <a href="img/apartment-1.jpg" data-fancybox="apartments">
+                                            <img src="img/apartment-1.jpg" alt="" class="apartments__img" loading="lazy">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide apartments__slide">
+                                        <a href="img/apartment-4.jpg" data-fancybox="apartments">
+                                            <img src="img/apartment-4.jpg" alt="" class="apartments__img" loading="lazy">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide apartments__slide">
+                                        <a href="img/apartment-3.jpg" data-fancybox="apartments">
+                                            <img src="img/apartment-3.jpg" alt="" class="apartments__img" loading="lazy">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide apartments__slide">
+                                        <a href="img/apartment-1.jpg" data-fancybox="apartments">
+                                            <img src="img/apartment-1.jpg" alt="" class="apartments__img" loading="lazy">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="apartments__nav">
+                            <button class="btn apartments__nav-button apartments__nav-button--prev">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
+                            </button>
+                            <button class="btn apartments__nav-button apartments__nav-button--next">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="apartments__footer">
+                        <a href="img/apartment-1.jpg" class="apartments__more" data-fancybox="apartments">
+                            Все фото
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section-gap infra same-height">
+            <div class="container">
+                <div class="section__header section__header--center">
+                    <div class="section__top-text wow animate__animated animate__fadeInUp" data-wow-delay=".3s">
+                        Инновации в качестве
+                    </div>
+                    <h2 class="section__title apartments__title wow animate__animated animate__fadeInUp" data-wow-delay=".5s">
+                        Бассейн
+                    </h2>
+                </div>
+                <div class="infra__inner">
+                    <div class="infra__info">
+                        <div class="infra__cards">
+                            <div class="infra__card wow animate__animated animate__fadeInUp" data-wow-delay=".3s">
+                                <span class="infra__card-icon" style="background-image: url(img/icons/water.svg);"></span>
+                                <div class="infra__card-title">
+                                    Озоновая очистка
+                                </div>
+                                <div class="infra__card-description">
+                                    Озоновая система очищает воду, обеспечивая ее чистоту 
+                                    без агрессивных химикатов.
+                                </div>
+                            </div>
+                            <div class="infra__card infra__card--number wow animate__animated animate__fadeInUp" data-wow-delay=".5s">
+                                <span class="infra__card-number">
+                                    210
+                                </span>
+                                <span class="infra__card-measure">
+                                    кв.м.
+                                </span>
+                            </div>
+                            <div class="infra__card wow animate__animated animate__fadeInUp" data-wow-delay=".7s">
+                                <span class="infra__card-icon" style="background-image: url(img/icons/safe.svg);"></span>
+                                <div class="infra__card-title">
+                                    Безопасность
+                                </div>
+                                <div class="infra__card-description">
+                                    Озон эффективно убивает бактерии и вирусы, делая плавание безопасным для взрослых и детей
+                                </div>
+                            </div>
+                            <div class="infra__card wow animate__animated animate__fadeInUp" data-wow-delay=".9s">
+                                <span class="infra__card-icon" style="background-image: url(img/icons/ecology.svg);"></span>
+                                <div class="infra__card-title">
+                                    Экологичность
+                                </div>
+                                <div class="infra__card-description">
+                                    Снижение использования химических веществ делает бассейн безопасным для окружающей среды.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="infra__thumbs">
+                        <img src="img/infra-1.jpg" alt="" class="infra__thumb wow animate__animated animate__fadeIn" data-wow-delay=".9s">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section-gap-bottom infra v2">
+            <div class="container">
+                <div class="infra__inner">
+                    <div class="infra__info">
+                        <div class="section__header small">
+                            <h2 class="section__title apartments__title wow animate__animated animate__fadeInUp" data-wow-delay=".3s">
+                                Разнообразие Кухни
+                            </h2>
+                            <p class="infra__description wow animate__animated animate__fadeInUp" data-wow-delay=".5s">
+                                Наслаждайтесь разнообразием вкусов в нашем ресторане на 40 гостей 
+                                с полностью оборудованной кухней, предлагающей вкусные и полезные блюда в уютной обстановке.
+                            </p>
+                        </div>
+                        <div class="infra__cards">
+                            <div class="infra__card small wow animate__animated animate__fadeInUp" data-wow-delay=".3s">
+                                <span class="infra__card-icon" style="background-image: url(img/icons/water.svg);"></span>
+                                <div class="infra__card-title bold">
+                                    ФРЕШ-БАР
+                                </div>
+                                <div class="infra__card-description">
+                                    Вкусные коктейли и свежевыжатые соки
+                                </div>
+                            </div>
+                            <div class="infra__card infra__card--number small wow animate__animated animate__fadeInUp" data-wow-delay=".5s">
+                                <span class="infra__card-number">
+                                    40
+                                </span>
+                                <span class="infra__card-measure uppercase">
+                                    Гостей
+                                </span>
+                            </div>
+                        </div>
+                        <button href="#" class="nun-btn nun-btn--outline infra__link open-modal hide-md wow animate__animated animate__fadeIn" data-wow-delay=".5s" data-id="touch">
+                            <span>СВЯЗАТЬСЯ С НАМИ</span>
+                        </button>
+                    </div>
+                    <div class="infra__thumbs">
+                        <img src="img/infra-2.jpg" alt="" class="infra__thumb wow animate__animated animate__fadeInLeft" data-wow-delay=".5s">
+                        <img src="img/infra-3.jpg" alt="" class="infra__thumb wow animate__animated animate__fadeInRight" data-wow-delay=".7s">
+                    </div>
+                    <button href="#" class="nun-btn nun-btn--outline infra__link open-modal show-md" data-id="touch">
+                        <span>СВЯЗАТЬСЯ С НАМИ</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="section section-gap-bottom infra v3">
+            <div class="container">
+                <div class="infra__inner v3">
+                    <div class="infra__thumbs">
+                        <img src="img/infra-4.jpg" alt="" class="infra__thumb">
+                    </div>
+                    <div class="infra__info">
+                        <div class="section__header small">
+                            <h2 class="section__title apartments__title wow animate__animated animate__fadeInUp" data-wow-delay=".3s">
+                                Культура Отдыха
+                            </h2>
+                            <p class="infra__description wow animate__animated animate__fadeInUp" data-wow-delay=".5s">
+                                На территории объекта регулярно проводятся разнообразные культурные мероприятия
+                            </p>
+                        </div>
+                        <div class="infra__cards">
+                            <div class="infra__card small wow animate__animated animate__fadeInRight" data-wow-delay=".3s">
+                                <span class="infra__card-icon" style="background-image: url(img/icons/lecture.svg);"></span>
+                                <div class="infra__card-title bold">
+                                    Лекции
+                                </div>
+                                <div class="infra__card-description">
+                                    Образовательные выступления и дискуссии
+                                </div>
+                            </div>
+                            <div class="infra__card small wow animate__animated animate__fadeInRight" data-wow-delay=".5s">
+                                <span class="infra__card-icon" style="background-image: url(img/icons/yoga.svg);"></span>
+                                <div class="infra__card-title bold">
+                                    Ретриты
+                                </div>
+                                <div class="infra__card-description">
+                                    Практики медитации и духовного развития
+                                </div>
+                            </div>
+                            <div class="infra__card small wow animate__animated animate__fadeInRight" data-wow-delay=".7s">
+                                <span class="infra__card-icon" style="background-image: url(img/icons/marketing_seminar.svg);"></span>
+                                <div class="infra__card-title bold">
+                                    Семинары
+                                </div>
+                                <div class="infra__card-description">
+                                    Интерактивные обучающие сессии и тренинги
+                                </div>
+                            </div>
+                            <div class="infra__card small wow animate__animated animate__fadeInRight" data-wow-delay=".9s">
+                                <span class="infra__card-icon" style="background-image: url(img/icons/amphitheatr.svg);"></span>
+                                <div class="infra__card-title bold">
+                                    Амфитеатр
+                                </div>
+                                <div class="infra__card-description">
+                                    Концерты и интересные представления
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section-gap-bottom infra same-height">
+            <div class="container">
+                <div class="section__header section__header--center">
+                    <h2 class="section__title apartments__title wow animate__animated animate__fadeInUp" data-wow-delay=".3s">
+                        Релаксация и Дух
+                    </h2>
+                </div>
+                <div class="infra__inner">
+                    <div class="infra__info">
+                        <p class="infra__description gap wow animate__animated animate__fadeInUp" data-wow-delay=".5s">
+                            Для тех, кто ищет полное расслабление и внутренний баланс, у нас есть массажный зал, кабинет психолога и йога-зал, которые создают атмосферу умиротворения и духовного роста.
+                        </p>
+                        <div class="infra__cards">
+                            <div class="infra__card wow animate__animated animate__fadeInUp" data-wow-delay=".3s">
+                                <span class="infra__card-icon" style="background-image: url(img/icons/yoga2.svg);"></span>
+                                <div class="infra__card-title">
+                                    Йога-зал
+                                </div>
+                                <div class="infra__card-description">
+                                    90 кв.м. для медитаций, релаксаций и дыхательных практик
+                                </div>
+                            </div>
+                            <div class="infra__card infra__card--number wow animate__animated animate__fadeInUp" data-wow-delay=".5s">
+                                <span class="infra__card-number">
+                                    90
+                                </span>
+                                <span class="infra__card-measure">
+                                    кв.м.
+                                </span>
+                            </div>
+                            <div class="infra__card wow animate__animated animate__fadeInUp" data-wow-delay=".7s">
+                                <span class="infra__card-icon" style="background-image: url(img/icons/couch.svg);"></span>
+                                <div class="infra__card-title">
+                                    Кабинет психолога
+                                </div>
+                                <div class="infra__card-description">
+                                    Уютное и безопасное пространство для доверительных бесед
+                                </div>
+                            </div>
+                            <div class="infra__card wow animate__animated animate__fadeInUp" data-wow-delay=".9s">
+                                <span class="infra__card-icon" style="background-image: url(img/icons/medicine.svg);"></span>
+                                <div class="infra__card-title">
+                                    Массажный кабинет
+                                </div>
+                                <div class="infra__card-description">
+                                    Пространство ароматерапии, способствующее расслаблению и оздоровлению
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="infra__thumbs">
+                        <img src="img/infra-5.jpg" alt="" class="infra__thumb wow animate__animated animate__fadeIn" data-wow-delay="1.2s">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section-gap rooms section--dark">
+            <div class="container">
+                <div class="section__header section__header--white section__header--center">
+                    <div class="section__top-text wow animate__animated animate__fadeInUp" data-wow-delay=".3s">
+                        НОМЕРНОЙ ФОНД
+                    </div>
+                    <h2 class="section__title wow animate__animated animate__fadeInUp" data-wow-delay=".5s">
+                        Уют для Вашего Комфорта
+                    </h2>
+                </div>
+                <div class="rooms__cards">
+                    <div class="rooms__card wow animate__animated animate__fadeIn" data-wow-delay=".3s">
+                        <div class="rooms__card-thumb">
+                            <img src="img/room.jpg" alt="" class="rooms__card-img">
+                        </div>
+                        <div class="rooms__card-info">
+                            <div class="rooms__card-title">
+                                2+1:
+                            </div>
+                            <div class="rooms__card-params">
+                                Площадь: 44 кв.м. <br>
+                                Вместимость: 5 чел. 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rooms__card wow animate__animated animate__fadeIn" data-wow-delay=".5s">
+                        <div class="rooms__card-thumb">
+                            <img src="img/room-2.jpg" alt="" class="rooms__card-img">
+                        </div>
+                        <div class="rooms__card-info">
+                            <div class="rooms__card-title">
+                                1+0:
+                            </div>
+                            <div class="rooms__card-params">
+                                Площадь: 25 кв.м. <br>
+                                Вместимость: 2 чел. 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rooms__card wow animate__animated animate__fadeIn" data-wow-delay=".7s">
+                        <div class="rooms__card-thumb">
+                            <img src="img/room-3.jpg" alt="" class="rooms__card-img">
+                        </div>
+                        <div class="rooms__card-info">
+                            <div class="rooms__card-title">
+                                1+1:
+                            </div>
+                            <div class="rooms__card-params">
+                                Площадь: 30 кв.м. <br>
+                                Вместимость: 2-3 чел.  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rooms__card wow animate__animated animate__fadeIn" data-wow-delay=".9s">
+                        <div class="rooms__card-thumb">
+                            <img src="img/room-4.jpg" alt="" class="rooms__card-img">
+                        </div>
+                        <div class="rooms__card-info">
+                            <div class="rooms__card-title">
+                                1+1:
+                            </div>
+                            <div class="rooms__card-params">
+                                Площадь: 38 кв.м. <br>
+                                Вместимость: 3 чел. 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rooms__footer">
+                    <button href="#" class="nun-btn nun-btn--outline open-modal rooms__link" data-id="touch">
+                        <span>Забронировать</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="section section-gap infra same-height">
+            <div class="container">
+                <div class="infra__inner">
+                    <div class="infra__info">
+                        <div class="section__header small">
+                            <div class="section__top-text wow animate__animated animate__fadeInUp" data-wow-delay=".3s">
+                                ДОПОЛНИТЕЛЬНЫЕ
+                            </div>
+                            <h2 class="section__title apartments__title wow animate__animated animate__fadeInUp" data-wow-delay=".5s">
+                                Удобства в Бунгало
+                            </h2>
+                        </div>
+                        <div class="infra__cards">
+                            <div class="infra__card small wow animate__animated animate__fadeInUp" data-wow-delay=".3s">
+                                <span class="infra__card-icon" style="background-image: url(img/icons/air_conditioner.svg);"></span>
+                                <div class="infra__card-title">
+                                    Кондиционер
+                                </div>
+                            </div>
+                            <div class="infra__card small wow animate__animated animate__fadeInUp" data-wow-delay=".5s">
+                                <span class="infra__card-icon" style="background-image: url(img/icons/washing_machine.svg);"></span>
+                                <div class="infra__card-title">
+                                    Стиральная машинка
+                                </div>
+                            </div>
+                            <div class="infra__card small wow animate__animated animate__fadeInUp" data-wow-delay=".7s">
+                                <span class="infra__card-icon" style="background-image: url(img/icons/stove.svg);"></span>
+                                <div class="infra__card-title">
+                                    Кухня
+                                </div>
+                            </div>
+                            <div class="infra__card small wow animate__animated animate__fadeInUp" data-wow-delay=".9s">
+                                <span class="infra__card-icon" style="background-image: url(img/icons/refrigerator.svg);"></span>
+                                <div class="infra__card-title">
+                                    Холодильник
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="infra__thumbs">
+                        <img src="img/infra-6.jpg" alt="" class="infra__thumb wow animate__animated animate__fadeIn" data-wow-delay="1.2s">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section-gap-bottom book">
+            <div class="container">
+                <div class="book__content" style="background-image: url(img/book-bg.jpg);">
+                    <div class="book__inner">
+                        <h2 class="book__title">
+                            Откройте для себя Гармонию с Природой. Резервируйте место сейчас.
+                        </h2>
+                        <button href="#" class="nun-btn nun-btn--green open-modal book__link" data-id="touch">
+                            <span>Забронировать</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="footer" class="footer" style="background-image: url(img/footer-bg.jpg);">
+    <div class="container">
+        <div class="footer__inner">
+            <section class="section touch">
+                <div class="section__header section__header--white small">
+                    <h2 class="section__title">
+                        Свяжитесь с нами
+                    </h2>
+                    <p class="touch__description">
+                        Заполните форму обратной связи, и мы свяжемся с вами в ближайшее время. Ваши вопросы и предложения важны для нас!
+                    </p>
+                </div>
+                <div class="touch__content">
+                    <div class="form touch__form">
+                        <form>
+                            <div class="form-fields">
+                                <div class="form-group">
+                                    <input type="text" placeholder="Имя*" required>
+                                    <input type="email" placeholder="E-mail*" required>
+                                    <input type="tel" placeholder="Телефон*" required>
+                                </div>
+                                <textarea placeholder="Сообщение"></textarea>
+                            </div>
+                            <button class="btn nun-btn nun-btn--green form-submit" type="submit">
+                                Отправить
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <div class="footer__contacts">
+                <a class="footer__contacts-item" href="tel:+7 (531) 123-45-67">
+                    +7 (531) 123-45-67
+                </a>
+                <a class="footer__contacts-item" href="tel:+7 (531) 123-45-67">
+                    nun_bungalove@.com
+                </a>
+                <address class="footer__contacts-item address">
+                    1534 Sok., Antalya, site Country, <br> The World
+                </address>
+                <ul class="social footer__social">
+                    <li class="social__item footer__social-item">
+                        <a href="#" class="social__link social__link--youtube footer__social-link">
+                            <svg width="38" height="28" viewBox="0 0 38 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M35.3249 2.51375C36.433 3.67925 36.7964 6.32525 36.7964 6.32525C36.7964 6.32525 37.1665 9.43025 37.1665 12.5352V15.449C37.1665 18.5562 36.7964 21.6635 36.7964 21.6635C36.7964 21.6635 36.433 24.3072 35.3249 25.4727C34.0573 26.8498 32.6523 26.9938 31.8567 27.0725L31.6174 27.0995C26.4406 27.4887 18.6665 27.5 18.6665 27.5C18.6665 27.5 9.04642 27.41 6.08571 27.113C5.91881 27.0836 5.75104 27.0596 5.58265 27.041C4.64524 26.924 3.17375 26.7418 2.00587 25.4727C0.897817 24.3072 0.536593 21.6635 0.536593 21.6635C0.536593 21.6635 0.166504 18.5585 0.166504 15.449V12.5375C0.166504 9.4325 0.536593 6.32525 0.536593 6.32525C0.536593 6.32525 0.897817 3.67925 2.00587 2.51375C3.27569 1.1345 4.68292 0.995 5.4785 0.914L5.7134 0.88925C10.8924 0.5 18.6576 0.5 18.6576 0.5H18.6732C18.6732 0.5 26.4406 0.5 31.6174 0.88925C31.6963 0.898346 31.7754 0.906597 31.8545 0.914C32.6479 0.99275 34.0551 1.1345 35.3249 2.51375ZM14.8482 8.195V18.9815L24.8428 13.6062L14.8482 8.195Z" fill="white"></path>
+                            </svg>
+                        </a>
+                    </li> 
+                    <li class="social__item footer__social-item">
+                        <a href="#" class="social__link social__link--youtube footer__social-link">
+                            <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M29.4846 4.1278L2.19578 14.314C1.39663 14.6123 1.31386 15.7099 2.05924 16.1246L8.25346 19.5714L9.97833 27.2499C10.1258 27.9065 10.8667 28.2329 11.4508 27.8986L17.0143 24.7143L24.5346 29.6807C25.1271 30.072 25.9273 29.7384 26.0663 29.0421L30.815 5.26047C30.9684 4.49211 30.2187 3.85379 29.4846 4.1278Z" fill="white"></path>
+                                <path d="M23.6665 10.4286L11.2893 18.0907C11.216 18.136 11.18 18.2233 11.2 18.3071L12.3079 22.9497C12.3517 23.1331 12.6017 23.1596 12.6829 22.9894L13.6969 20.8648C13.7069 20.844 13.7203 20.825 13.7368 20.8088L23.9124 10.7408C24.0817 10.5733 23.869 10.3032 23.6665 10.4286Z" fill="#040404"></path>
+                            </svg>
+                        </a>
+                    </li> 
+                    <li class="social__item footer__social-item">
+                        <a href="#" class="social__link social__link--youtube footer__social-link">
+                            <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M28.166 0.5H4.16704C1.90756 0.5 0.166504 2.24105 0.166504 4.50054V28.4995C0.166504 30.7568 1.90756 32.5 4.16704 32.5H28.166C30.4233 32.5 32.1665 30.7589 32.1665 28.4995V4.50054C32.1665 2.24105 30.4233 0.5 28.166 0.5ZM16.1903 10.2141C19.7393 10.2141 22.6145 13.0006 22.6145 16.4395C22.6145 19.8763 19.7393 22.665 16.1903 22.665C12.6434 22.665 9.76823 19.8763 9.76823 16.4395C9.76823 13.0006 12.6455 10.2141 16.1903 10.2141ZM28.166 27.4993C28.166 28.2014 27.8657 28.4995 27.1658 28.4995H5.16718C4.4673 28.4995 4.16704 28.2014 4.16704 27.4993V13.4996L6.65982 14.0418C6.39197 14.9123 6.24724 15.8325 6.24724 16.7873C6.24724 22.1055 10.7014 26.4214 16.1903 26.4214C21.6813 26.4214 26.1333 22.1077 26.1333 16.7873C26.1333 15.8325 25.9886 14.9123 25.7207 14.0418L28.166 13.4996V27.4993ZM28.166 9.50122C28.166 10.0542 27.7188 10.5013 27.1658 10.5013H23.1653C22.6123 10.5013 22.1652 10.0542 22.1652 9.50122V5.50067C22.1652 4.94768 22.6123 4.50054 23.1653 4.50054H27.1658C27.7188 4.50054 28.166 4.94768 28.166 5.50067V9.50122Z" fill="white"></path>
+                            </svg>
+                        </a>
+                    </li> 
+                    <li class="social__item footer__social-item">
+                        <a href="#" class="social__link social__link--youtube footer__social-link">
+                            <svg width="31" height="33" viewBox="0 0 31 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.964 17.3371C13.1987 16.63 12.3497 15.6374 11.9807 14.7576C11.9244 14.6449 11.8117 14.3613 11.9807 14.134C12.3207 13.6814 12.377 13.6523 12.746 13.2269C13.0005 12.9142 13.1987 12.6325 13.1151 12.3762L11.8407 9.06036C11.7262 8.83312 11.3881 8.80586 10.99 8.77677C10.6501 8.77677 10.2828 8.77677 10.0265 8.83312C9.45936 9.03127 8.29957 10.5619 8.15778 11.6672C7.84511 14.0759 10.0265 17.279 12.208 19.2623C14.3894 21.2746 17.7597 23.1743 20.1392 22.6344C21.2445 22.3799 22.6606 21.1038 22.7733 20.5093C22.8297 20.2548 22.8024 19.8858 22.7442 19.5458C22.7151 19.1495 22.6315 18.866 22.4043 18.7533L19.5157 17.4208C19.2594 17.279 19.0049 17.3917 18.7504 17.7043C18.4395 18.1297 18.2959 18.2988 17.9287 18.7533C17.7306 19.0078 17.5888 19.1786 17.3634 19.2059C17.1071 19.2623 16.7689 19.1205 16.7108 19.1205C15.8037 18.8114 14.7566 18.0461 13.964 17.3371ZM4.44573 27.5136L6.08906 23.347C4.27485 21.2492 3.16959 18.4987 3.16959 15.4956C3.16959 8.86403 8.55225 3.50676 15.182 3.50676C21.8098 3.50676 27.1634 8.86403 27.1634 15.4956C27.1634 22.1272 21.8098 27.5136 15.182 27.5136C12.5188 27.5136 10.0829 26.6628 8.09961 25.1903L4.44573 27.5136ZM2.43336 23.4306L0.166504 32.5L8.26867 28.8152C10.3374 29.8914 12.6879 30.5167 15.182 30.5167C23.4532 30.5167 30.1665 23.7997 30.1665 15.4938C30.1665 7.21885 23.4514 0.5 15.182 0.5C6.88165 0.5 0.168322 7.21704 0.168322 15.4938C0.168322 18.4151 1.01726 21.1365 2.43336 23.4306Z" fill="white"></path>
+                            </svg>
+                        </a>
+                    </li> 
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<div id="touch" class="modal touch-modal">
+    <div class="modal__inner touch-modal__inner" style="background-image: url(img/footer-bg.jpg);">
+        <button class="btn modal__close">
+            Закрыть модальное окно
+        </button>
+        <section class="section touch">
+            <div class="section__header section__header--white small">
+                <h2 class="section__title">
+                    Свяжитесь с нами
+                </h2>
+                <p class="touch__description">
+                    Заполните форму обратной связи, и мы свяжемся с вами в ближайшее время. Ваши вопросы и предложения важны для нас!
+                </p>
+            </div>
+            <div class="touch__content">
+                <div class="form touch__form">
+                    <form>
+                        <div class="form-fields">
+                            <div class="form-group">
+                                <input type="text" placeholder="Имя*" required>
+                                <input type="email" placeholder="E-mail*" required>
+                                <input type="tel" placeholder="Телефон*" required>
+                            </div>
+                            <textarea placeholder="Сообщение"></textarea>
+                        </div>
+                        <button class="btn nun-btn nun-btn--green form-submit" type="submit">
+                            Отправить
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+<script src="js/libs/swiper-bundle.min.js"></script>
+<script src="js/libs/fancybox.umd.js"></script>
+<script src="js/libs/wow.min.js"></script>
+<script src="js/main.min.js"></script>
+</body>
+</html>
